@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #281b1e, #623AA2);
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .quiz-container {
+            text-align: center; /* Center the title */
+        }
+        .question {
+            margin-bottom: 20px;
+            color: rgb(186, 173, 173); /* Set question text color to white */
+            text-align: left; /* Align questions to the left */
+        }
+        h1 {
+            color: white; /* Set header color to white */
+        }
+        label {
+            color: rgb(123, 92, 135); /* Set label color to purple */
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #513060;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .button:hover {
+            background: #9458b0;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <h3>Question 1: What does CPU stand for?</h3>
+                <label><input type="radio" name="q1" value="a"> A) Central Processing Unit</label><br>
+                <label><input type="radio" name="q1" value="b"> B) Central Programming Unit</label><br>
+                <label><input type="radio" name="q1" value="c"> C) Computer Personal Unit</label><br>
+                <label><input type="radio" name="q1" value="d"> D) Centralized Processing Unit</label>
+            </div>
+            <div class="question">
+                <h3>Question 2: What is the main function of the operating system?</h3>
+                <label><input type="radio" name="q2" value="a"> A) Manage hardware and software resources</label><br>
+                <label><input type="radio" name="q2" value="b"> B) Run applications</label><br>
+                <label><input type="radio" name="q2" value="c"> C) Provide internet access</label><br>
+                <label><input type="radio" name="q2" value="d"> D) Store data</label>
+            </div>
+            <div class="question">
+                <h3>Question 3: What does HTML stand for?</h3>
+                <label><input type="radio" name="q3" value="a"> A) Hyper Text Markup Language</label><br>
+                <label><input type="radio" name="q3" value="b"> B) High Text Markup Language</label><br>
+                <label><input type="radio" name="q3" value="c"> C) Hyperlink and Text Markup Language</label><br>
+                <label><input type="radio" name="q3" value="d"> D) Hyper Text Multi Language</label>
+            </div>
+            <div class="question">
+                <h3>Question 4: Which of the following is a programming language?</h3>
+                <label><input type="radio" name="q4" value="a"> A) HTML</label><br>
+                <label><input type="radio" name="q4" value="b"> B) CSS</label><br>
+                <label><input type="radio" name="q4" value="c"> C) JavaScript</label><br>
+                <label><input type="radio" name="q4" value="d"> D) XML</label>
+            </div>
+            <div class="question">
+                <h3>Question 5: What is the purpose of a firewall?</h3>
+                <label><input type="radio" name="q5" value="a"> A) To cool down the computer</label><br>
+                <label><input type="radio" name="q5" value="b"> B) To protect the network from unauthorized access</label><br>
+                <label><input type="radio" name="q5" value="c"> C) To increase internet speed</label><br>
+                <label><input type="radio" name="q5" value="d"> D) To store data</label>
+            </div>
+            <div class="question">
+                <h3>Question 6: What is the function of RAM in a computer?</h3>
+                <label><input type="radio" name="q6" value="a"> A) Store permanent data</label><br>
+                <label><input type="radio" name="q6" value="b"> B) Provide temporary storage for data</label><br>
+                <label><input type="radio" name="q6" value="c"> C) Manage input and output devices</label><br>
+                <label><input type="radio" name="q6" value="d"> D) Control the CPU</label>
+            </div>
+            <div class="question">
+                <h3>Question 7: What is phishing?</h3>
+                <label><input type="radio" name="q7" value="a"> A) A type of fishing</label><br>
+                <label><input type="radio" name="q7" value="b"> B) A method of stealing personal information</label><br>
+                <label><input type="radio" name="q7" value="c"> C) A type of malware</label><br>
+                <label><input type="radio" name="q7" value="d"> D) A computer virus</label>
+            </div>
+            <div class="question">
+                <h3>Question 8: What does VPN stand for?</h3>
+                <label><input type="radio" name="q8" value="a"> A) Virtual Private Network</label><br>
+                <label><input type="radio" name="q8" value="b"> B) Virtual Public Network</label><br>
+                <label><input type="radio" name="q8" value="c"> C) Verified Private Network</label><br>
+                <label><input type="radio" name="q8" value="d"> D) Virtual Protected Network</label>
+            </div>
+            <div class="question">
+                <h3>Question 9: What is the primary function of a web browser?</h3>
+                <label><input type="radio" name="q9" value="a"> A) To create websites</label><br>
+                <label><input type="radio" name="q9" value="b"> B) To display web pages</label><br>
+                <label><input type="radio" name="q9" value="c"> C) To store data</label><br>
+                <label><input type="radio" name="q9" value="d"> D) To manage network connections</label>
+            </div>
+            <div class="question">
+                <h3>Question 10: What is an IP address?</h3>
+                <label><input type="radio" name="q10" value="a"> A) A unique identifier for a device on a network</label><br>
+                <label><input type="radio" name="q10" value="b"> B) A type of computer virus</label><br>
+                <label><input type="radio" name="q10" value="c"> C) A programming language</label><br>
+                <label><input type="radio" name="q10" value="d"> D) A web browser</label>
+            </div>
+            <div class="question">
+                <h3>Question 11: What is the purpose of an operating system?</h3>
+                <label><input type="radio" name="q11" value="a"> A) To manage hardware and software resources</label><br>
+                <label><input type="radio" name="q11" value="b"> B) To provide internet access</label><br>
+                <label><input type="radio" name="q11" value="c"> C) To run applications</label><br>
+                <label><input type="radio" name="q11" value="d"> D) To store data</label>
+            </div>
+            <div class="question">
+                <h3>Question 12: What is the function of a router?</h3>
+                <label><input type="radio" name="q12" value="a"> A) To connect multiple networks</label><br>
+                <label><input type="radio" name="q12" value="b"> B) To store data</label><br>
+                <label><input type="radio" name="q12" value="c"> C) To manage input devices</label><br>
+                <label><input type="radio" name="q12" value="d"> D) To increase internet speed</label>
+            </div>
+            <div class="question">
+                <h3>Question 13: What is malware?</h3>
+                <label><input type="radio" name="q13" value="a"> A) Software designed to harm a computer</label><br>
+                <label><input type="radio" name="q13" value="b"> B) A type of hardware</label><br>
+                <label><input type="radio" name="q13" value="c"> C) A programming language</label><br>
+                <label><input type="radio" name="q13" value="d"> D) A web browser</label>
+            </div>
+            <div class="question">
+                <h3>Question 14: What is cloud computing?</h3>
+                <label><input type="radio" name="q14" value="a"> A) Storing data on local servers</label><br>
+                <label><input type="radio" name="q14" value="b"> B) Storing data on remote servers accessed via the internet</label><br>
+                <label><input type="radio" name="q14" value="c"> C) A type of computer virus</label><br>
+                <label><input type="radio" name="q14" value="d"> D) A programming language</label>
+            </div>
+            <div class="question">
+                <h3>Question 15: What is a database?</h3>
+                <label><input type="radio" name="q15" value="a"> A) A collection of data organized for easy access</label><br>
+                <label><input type="radio" name="q15" value="b"> B) A type of software</label><br>
+                <label><input type="radio" name="q15" value="c"> C) A programming language</label><br>
+                <label><input type="radio" name="q15" value="d"> D) A hardware component</label>
+            </div>
+            <div class="question">
+                <h3>Question 16: What is the purpose of a compiler?</h3>
+                <label><input type="radio" name="q16" value="a"> A) To convert source code into machine code</label><br>
+                <label><input type="radio" name="q16" value="b"> B) To run applications</label><br>
+                <label><input type="radio" name="q16" value="c"> C) To manage hardware</label><br>
+                <label><input type="radio" name="q16" value="d"> D) To store data</label>
+            </div>
+            <div class="question">
+                <h3>Question 17: What is the function of a search engine?</h3>
+                <label><input type="radio" name="q17" value="a"> A) To store data</label><br>
+                <label><input type="radio" name="q17" value="b"> B) To find information on the internet</label><br>
+                <label><input type="radio" name="q17" value="c"> C) To manage hardware</label><br>
+                <label><input type="radio" name="q17" value="d"> D) To run applications</label>
+            </div>
+            <div class="question">
+                <h3>Question 18: What is the purpose of an antivirus program?</h3>
+                <label><input type="radio" name="q18" value="a"> A) To speed up the computer</label><br>
+                <label><input type="radio" name="q18" value="b"> B) To protect against malware</label><br>
+                <label><input type="radio" name="q18" value="c"> C) To manage network connections</label><br>
+                <label><input type="radio" name="q18" value="d"> D) To store data</label>
+            </div>
+            <div class="question">
+                <h3>Question 19: What is the function of a hard drive?</h3>
+                <label><input type="radio" name="q19" value="a"> A) To process data</label><br>
+                <label><input type="radio" name="q19" value="b"> B) To store data</label><br>
+                <label><input type="radio" name="q19" value="c"> C) To manage input devices</label><br>
+                <label><input type="radio" name="q19" value="d"> D) To increase internet speed</label>
+            </div>
+            <div class="question">
+                <h3>Question 20: What is the purpose of a URL?</h3>
+                <label><input type="radio" name="q20" value="a"> A) To identify a resource on the internet</label><br>
+                <label><input type="radio" name="q20" value="b"> B) To store data</label><br>
+                <label><input type="radio" name="q20" value="c"> C) To manage hardware</label><br>
+                <label><input type="radio" name="q20" value="d"> D) To run applications</label>
+            </div>
+        </form>
+        <div class="button-container">
+            <button class="button" type="button" onclick="resetQuiz()">Reset</button>
+            <button class="button" type="button" onclick="goBack()">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        function resetQuiz() {
+            document.getElementById('quiz-form').reset();
+        }
+        function goBack() {
+            window.location.href = 'Dashboard.html'; // Change to the correct path if needed
+        }
+    </script>
+</body>
+</html>
